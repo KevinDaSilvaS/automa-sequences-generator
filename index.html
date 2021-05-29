@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <div class="input-holder">
+            <input type="number" id="sequences-amount" placeholder="number of sequences">
+        </div>
+        <div class="input-holder">
+            <input type="number" id="sequences-min-length" placeholder="min length of sequences">
+        </div>
+        <div class="input-holder">
+            <input type="number" id="sequences-max-length" placeholder="max length of sequences">
+        </div>
+        <div class="input-holder">
+            <input type="text" id="alphabet" placeholder="add alphabet in format: a,b,c,d,e">
+        </div>
+        <div class="input-holder">
+            <button onclick="displaySequences();" id="generate">Generate</button>
+        </div>
+    </div>
+    <div class="content" id="display">
+
+    </div>
+    <script src="./generators.js"></script>
+</body>
+</html>
