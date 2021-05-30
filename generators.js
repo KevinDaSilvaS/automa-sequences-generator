@@ -22,7 +22,7 @@ const generateSequences = ({amount, min, max, alphabet}) => {
         for (let i = 0; i < size; i++) {
             let pos = Math.floor(Math.random() * (alphabet.length + 1));
             if(pos < 0 || pos > alphabet.length-1) {
-                let pos = alphabet.length-1;
+                pos = 0;
             }
             sequence += alphabet[pos];
         }
