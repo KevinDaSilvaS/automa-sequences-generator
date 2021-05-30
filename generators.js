@@ -20,12 +20,8 @@ const generateSequences = ({amount, min, max, alphabet}) => {
         const size = Math.floor(Math.random() * (max - min + 1) + min);
         let sequence = "";
         for (let i = 0; i < size; i++) {
-            let pos = Math.floor(Math.random() * 2);
-            if(pos < 0 || pos > alphabet.length-1) {
-                pos = 0;
-            }
-            console.log(pos);
-            sequence += alphabet[pos];
+             const pos = Math.floor(Math.random() * (alphabet.length - 0));
+             sequence += alphabet[pos];
         }
         sequences.push(sequence);
     }
