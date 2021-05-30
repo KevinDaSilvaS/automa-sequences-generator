@@ -24,6 +24,7 @@ const generateSequences = ({amount, min, max, alphabet}) => {
             if(pos < 0 || pos > alphabet.length-1) {
                 pos = 0;
             }
+            console.log(pos);
             sequence += alphabet[pos];
         }
         sequences.push(sequence);
